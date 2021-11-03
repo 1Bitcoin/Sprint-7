@@ -1,4 +1,4 @@
-package ru.sber.rdbms
+package ru.sber.rdbms.example
 
 import java.sql.DriverManager
 

@@ -2,4 +2,9 @@ databaseChangeLog:
   - include:
       file: init.sql
 
+  - include:
+      file: stuffDatabase.sql
+
+  - include:
+      file: createIndex.sql
 
