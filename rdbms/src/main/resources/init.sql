@@ -8,5 +8,3 @@ create table account
     amount bigint constraint positive_amount check (amount >= 0),
     version int
 );
-
-
