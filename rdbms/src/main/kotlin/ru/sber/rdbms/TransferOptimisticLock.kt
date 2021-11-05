@@ -41,7 +41,9 @@ class TransferOptimisticLock {
     }
 
     private fun getVersionByID(connection: Connection, id: Long): Int {
-        val prepareStatement1 = connection.prepareStatement("select version from account where id = 1")
+        val prepareStatement1 = connection.prepareStatement("select version from account where id = ?")
+        prepareStatement1.setLong(1, id)
+
         var version: Int
 
         prepareStatement1.use { statement ->
